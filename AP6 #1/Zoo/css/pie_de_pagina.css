@@ -1,0 +1,8 @@
+/* pie_de_pagina.css */
+#pie { border-top:1px dashed #e0cfc0; margin-top:24px; padding-top:18px; background: transparent; }
+.footer_inner { display:flex; gap:20px; align-items:flex-start; padding:12px 0; }
+.footer_logo img { width:110px; display:block; }
+.footer_info { font-size:13px; color:#6a4f3d; line-height:1.5; }
+.footer_quote { margin-left:auto; width:40%; font-style:italic; color:#8a6b53; }
+.footer_quote .autor { display:block; margin-top:6px; font-weight:bold; color:#7b5a45; }
+.footer_copy { text-align:center; padding:12px 0; color:#8a6b53; font-size:13px; border-top:1px dashed #e0cfc0; margin-top:12px; }

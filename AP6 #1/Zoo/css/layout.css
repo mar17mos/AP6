@@ -1,0 +1,40 @@
+/* layout.css - estilo general y contenedor */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; padding:0; font-family: "Trebuchet MS", Arial, sans-serif; color:#4b2b1d; }
+
+/* fondo exterior texturizado (usuario debe poner assets/bg-brown.png) */
+body {
+  background: #5b3e2e url('../assets/bg-brown.png') repeat;
+}
+
+/* wrapper centrado */
+#page_wrapper {
+  width: 980px;
+  margin: 30px auto;
+}
+
+/* contenedor blanco con "borde rasgado" (simulado con sombra y margen) */
+#contenedor_principal {
+  background: #f7ecdf;
+  padding: 28px;
+  box-shadow: 0 0 0 14px #f0e6d9 inset, 0 6px 0 rgba(0,0,0,0.15);
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  position: relative;
+}
+
+/* util */
+.div_clear_both { clear: both; height: 0; }
+
+/* tipografías y encabezados */
+h2 { color:#991f1f; margin:0 0 12px 0; font-size:22px; }
+h3 { color:#b33; margin:0 0 8px 0; }
+
+/* estilo general de enlaces */
+a { color:#8a3b2a; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+/* contenedor principal layout responsive mínimo */
+@media (max-width: 1000px) {
+  #page_wrapper { width: 95%; }
+}
