@@ -1,0 +1,14 @@
+/* nav.css - menu principal */
+#nav_principal { text-align:center; margin-bottom: 18px; position: relative; z-index: 5; }
+.menu { list-style:none; padding:0; margin:0; display:inline-block; background:transparent; }
+.menu li { display:inline-block; margin:0 4px; }
+.menu a {
+  display:block;
+  padding:10px 18px;
+  background: url('../assets/menu-bg.png') no-repeat center top; /* opcional */
+  color:#fff;
+  font-weight:bold;
+  border-radius:3px 3px 0 0;
+}
+.menu li.active a { background:#f6efe6; color:#6b4b39; box-shadow:0 -3px 0 rgba(0,0,0,0.12) inset; }
+.menu a:hover { opacity:0.9; transform:translateY(-1px); }

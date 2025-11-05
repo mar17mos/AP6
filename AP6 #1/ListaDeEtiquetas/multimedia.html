@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta HTML5 - Multimedia</title>
+    <link rel="stylesheet" href="css/tema.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de etiquetas</h1>
+        <p>Ejemplos de etiquetas multimedia</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Estructurales</a></li>
+            <li class="activo"><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="control.html">Control</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Etiquetas Multimedia </h2>
+            <table>
+                <caption>Listado de etiquetas multimedia</caption>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Atributos</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!--  IMG -->
+                    <tr>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Incrusta una imagen en el documento HTML.</td>
+                        <td>
+                            <ul>
+                                <li><strong>src</strong>: ruta de la imagen.</li>
+                                <li><strong>alt</strong>: texto alternativo.</li>
+                                <li><strong>width / height</strong>: define tamaño.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <!-- Aquí agregas tu imagen -->
+                            <img src="assets/pexels-snapwire-101520.jpg" alt="Ejemplo de imagen" width="120">
+                        </td>
+                    </tr>
+
+                    <!--  AUDIO -->
+                    <tr>
+                        <td><code>&lt;audio&gt;</code></td>
+                        <td>Reproduce archivos de sonido o música.</td>
+                        <td>
+                            <ul>
+                                <li><strong>src</strong>: ruta del archivo de audio.</li>
+                                <li><strong>controls</strong>: muestra controles de reproducción.</li>
+                                <li><strong>autoplay</strong>: inicia el audio automáticamente.</li>
+                            </ul>
+                        </td>
+                        <td>
+                           
+                            <audio src="assets/horse.ogg" controls></audio>
+                        </td>
+                    </tr>
+
+                    <!--  VIDEO -->
+                    <tr>
+                        <td><code>&lt;video&gt;</code></td>
+                        <td>Permite reproducir archivos de video directamente en la página.</td>
+                        <td>
+                            <ul>
+                                <li><strong>src</strong>: ruta del video.</li>
+                                <li><strong>controls</strong>: muestra controles de reproducción.</li>
+                                <li><strong>poster</strong>: imagen previa antes de reproducir.</li>
+                            </ul>
+                        </td>
+                        <td>
+                           
+                            <video src="assets/WhatsApp Video 2025-10-28 at 10.44.39 PM.mp4" width="160" controls></video>
+                        </td>
+                    </tr>
+
+                    <!-- FIGURE + FIGCAPTION -->
+                    <tr>
+                        <td><code>&lt;figure&gt; + &lt;figcaption&gt;</code></td>
+                        <td>Se usa para asociar una imagen, gráfico o contenido con una descripción o título.</td>
+                        <td>
+                            <ul>
+                                <li><strong>id</strong>: identificador único.</li>
+                                <li><strong>class</strong>: clase CSS.</li>
+                                <li><strong>figcaption</strong>: texto descriptivo.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="assets/Imagen.PNG" width="120" alt="Foto ejemplo">
+                                <figcaption>Ejemplo con descripción</figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+
+                    <!-- SOURCE -->
+                    <tr>
+                        <td><code>&lt;source&gt;</code></td>
+                        <td>Permite especificar múltiples archivos multimedia para un mismo elemento <code>&lt;audio&gt;</code> o <code>&lt;video&gt;</code>.</td>
+                        <td>
+                            <ul>
+                                <li><strong>src</strong>: ruta del archivo.</li>
+                                <li><strong>type</strong>: tipo MIME (audio/mp3, video/mp4).</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <audio controls>
+                                <source src="assets/horse.mp3" type="audio/mp3">
+                                <source src="assets/horse.ogg" type="audio/ogg">
+                            </audio>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto creado por Maryuri Mosquera</p>
+    </footer>
+</body>
+</html>

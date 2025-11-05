@@ -1,0 +1,173 @@
+/* =============================
+   TEMA GENERAL - Maryuri Mosquera
+   Colores: Azul, gris, blanco
+   ============================= */
+
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Fondo y cuerpo */
+body {
+    background-color: #f2f4f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- ENCABEZADO ---------- */
+header {
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #e7edf4);
+    padding: 40px 20px;
+    border-bottom: 3px solid #1e6bb8;
+}
+header h1 {
+    color: #1e6bb8;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+header p {
+    color: #555;
+    font-size: 1.1em;
+    margin-top: 6px;
+}
+
+/* ---------- NAVEGACIÓN ---------- */
+nav {
+    background-color: #1e6bb8;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    background-color: #3b8bdb;
+}
+nav .activo a {
+    background-color: #ffffff;
+    color: #1e6bb8;
+}
+
+/* ---------- SECCIONES Y TABLAS ---------- */
+main {
+    padding: 20px 0;
+}
+section {
+    width: 100%;
+    max-width: 1300px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #1e6bb8;
+    border-bottom: 2px solid #1e6bb8;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/* ---------- TABLAS ---------- */
+table {
+    width: 110%;              
+    max-width: 1200px;        
+    border-collapse: collapse;
+    margin: 15px auto;        
+    font-size: 1em;           
+}
+
+caption {
+    caption-side: top;
+    font-weight: bold;
+    color: #1e6bb8;
+    margin-bottom: 10px;
+}
+th, td {
+    border: 1px solid #c9d3de;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+    font-size: 1em;          /* Más legible */
+
+}
+thead th {
+    background-color: #e6eef6;
+    color: #1e6bb8;
+    text-align: center;
+}
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* ---------- LISTAS ---------- */
+ul {
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 4px;
+}
+
+/* ---------- ELEMENTOS INTERACTIVOS ---------- */
+input, select, textarea, button {
+    border: 1px solid #c2c8d1;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 0.95em;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #1e6bb8;
+    outline: none;
+    box-shadow: 0 0 4px #a3c4eb;
+}
+button {
+    background-color: #1e6bb8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #3b8bdb;
+}
+
+/* ---------- PIE DE PÁGINA ---------- */
+footer {
+    background-color: #e7edf4;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    border-top: 2px solid #1e6bb8;
+    font-size: 0.9em;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+}

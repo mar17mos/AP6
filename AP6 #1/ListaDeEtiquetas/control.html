@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta HTML5 - Control</title>
+    <link rel="stylesheet" href="css/tema.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de etiquetas</h1>
+
+        <p>Ejemplos de etiquetas de control</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Estructurales</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li class="activo"><a href="control.html">Control</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Etiquetas de Control</h2>
+            <table>
+                <caption>Listado de etiquetas de control</caption>
+                <thead>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Atributos</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!-- FORM -->
+                    <tr>
+                        <td><code>&lt;form&gt;</code></td>
+                        <td>Etiqueta principal para crear formularios interactivos.</td>
+                        <td>
+                            <ul>
+                                <li><strong>action</strong>: URL donde se envían los datos.</li>
+                                <li><strong>method</strong>: método HTTP (GET o POST).</li>
+                                <li><strong>name</strong>: nombre del formulario.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <form action="#" method="post" style="background:#eef7ff; padding:8px;">
+                                <label>Nombre:</label>
+                                <input type="text" placeholder="Escribe tu nombre">
+                            </form>
+                        </td>
+                    </tr>
+
+                    <!-- INPUT -->
+                    <tr>
+                        <td><code>&lt;input&gt;</code></td>
+                        <td>Permite capturar datos del usuario como texto, número, fecha o contraseña.</td>
+                        <td>
+                            <ul>
+                                <li><strong>type</strong>: tipo de dato (text, password, number, etc.).</li>
+                                <li><strong>placeholder</strong>: texto guía dentro del campo.</li>
+                                <li><strong>required</strong>: campo obligatorio.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="Ingresa tu correo" style="padding:4px;">
+                        </td>
+                    </tr>
+
+                    <!--  SELECT + OPTION -->
+                    <tr>
+                        <td><code>&lt;select&gt; + &lt;option&gt;</code></td>
+                        <td>Despliega un menú de opciones para elegir un valor.</td>
+                        <td>
+                            <ul>
+                                <li><strong>name</strong>: nombre de la lista.</li>
+                                <li><strong>value</strong>: valor que se envía al seleccionar.</li>
+                                <li><strong>selected</strong>: marca la opción predeterminada.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="1">Opción 1</option>
+                                <option value="2" selected>Opción 2</option>
+                                <option value="3">Opción 3</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <!--  TEXTAREA -->
+                    <tr>
+                        <td><code>&lt;textarea&gt;</code></td>
+                        <td>Permite ingresar texto en múltiples líneas, como comentarios o descripciones.</td>
+                        <td>
+                            <ul>
+                                <li><strong>rows</strong>: número de filas visibles.</li>
+                                <li><strong>cols</strong>: ancho del área de texto.</li>
+                                <li><strong>placeholder</strong>: texto guía.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <textarea rows="3" cols="25" placeholder="Escribe tu comentario..."></textarea>
+                        </td>
+                    </tr>
+
+                    <!-- BUTTON -->
+                    <tr>
+                        <td><code>&lt;button&gt;</code></td>
+                        <td>Crea un botón que puede ejecutar acciones o enviar formularios.</td>
+                        <td>
+                            <ul>
+                                <li><strong>type</strong>: tipo de acción (submit, reset, button).</li>
+                                <li><strong>onclick</strong>: acción al hacer clic.</li>
+                                <li><strong>class</strong>: clase de estilo.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <button type="button" onclick="alert('¡Formulario enviado!')">Enviar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto creado por Maryuri Mosquera | Front-end SENA</p>
+    </footer>
+</body>
+</html>

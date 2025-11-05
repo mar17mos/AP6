@@ -1,0 +1,26 @@
+/* columns.css - columnas inferiores */
+#contenido { display:flex; gap:24px; align-items:flex-start; margin-bottom:20px; }
+
+/* columnas básicas */
+.col { background:transparent; padding:6px; }
+#noticias { width:32%; }
+#animal_mes { width:44%; }
+#redes_sociales { width:24%; position:relative; }
+
+/* noticias */
+.art { border-bottom:1px dashed #d6bda5; padding:10px 6px; }
+.art h3 { color:#b33; font-size:14px; margin-bottom:6px; }
+.art p { font-size:13px; color:#765544; line-height:1.4; }
+
+/* bicho del mes */
+.bicho_box { border:2px solid #b98968; padding:12px; background:#fff; }
+.bicho_box img { width:100%; max-height:300px; object-fit:cover; display:block; margin-bottom:12px; }
+
+/* redes sociales */
+.social_list { list-style:none; padding:0; margin:0; }
+.social_list li { padding:8px 0; border-bottom:1px dotted #e0cfc0; font-weight:600; color:#6a4f3d; }
+.social_list .icon { display:inline-block; width:26px; }
+
+/* pinguino flotante (a la derecha del aside, superpuesto en el borde inferior) */
+.pinguino_float { position:absolute; right:-40px; bottom:-40px; width:140px; pointer-events:none; }
+.pinguino_float img { width:100%; display:block; }
